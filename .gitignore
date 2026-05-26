@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.pyc
+local_storage.json
+.env
+credentials.json
+service_account.json
+AGENTS.md
+deep-code-crew/
+scan/
