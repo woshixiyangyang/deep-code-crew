@@ -1,6 +1,6 @@
 # Meal Party Recruitment System
 
-English | [中文](#中文版本)
+English | [中文](#中文版本) | [한국어](#한국어-버전)
 
 ## Overview
 
@@ -245,3 +245,127 @@ deep-code-crew/
 ## 支持
 
 如有问题或建议，请在仓库中提出 Issue。
+
+---
+
+## 한국어 버전
+
+# 식사 모임 모집 시스템
+
+## 프로젝트 개요
+
+Python으로 구축된 종합적인 **식사 모임 모집 시스템**입니다. 이 시스템을 통해 사용자는 식사 이벤트를 만들고, 참여자를 모집하며, 메뉴를 관리하고, 비용을 처리하며, 실시간 채팅 기능을 통해 협력할 수 있습니다. 데이터는 자동으로 Google Sheets와 동기화되어 지속적인 저장이 가능합니다.
+
+## 주요 기능
+
+- ✨ **방 관리**: 식사 모임 이벤트 생성 및 관리
+- 👥 **참여자 모집**: 참석자 초대 및 관리
+- 🍽️ **메뉴 관리**: 메뉴 항목 추가, 업데이트 및 추적
+- 💬 **실시간 채팅**: 다른 참여자와 소통
+- 💰 **비용 계산**: 자동 비용 분할 및 관리
+- 📋 **방 복제**: 유사한 이벤트를 위해 기존 방 복제
+- ☁️ **Google Sheets 통합**: 자동 데이터 백업 및 동기화
+- 📊 **데이터 지속성**: 방 데이터 로컬 저장 및 로드
+
+## 시스템 요구사항
+
+- Python 3.7 이상
+- Google Cloud 계정 (Sheets API 활성화됨)
+- Google Cloud 서비스 계정 자격증명 파일
+
+## 설치
+
+1. **저장소 복제**:
+```bash
+git clone https://github.com/woshixiyangyang/deep-code-crew.git
+cd deep-code-crew
+```
+
+2. **의존성 설치**:
+```bash
+pip install -r requirements.txt
+```
+
+## 설정
+
+### Google Sheets 설정
+
+Google Sheets 기능을 통합하려면 다음을 준비하세요:
+
+- **Google Sheet ID**: 대상 Google Sheet의 ID
+- **Service Account 자격증명 파일**: 인증 자격증명이 포함된 JSON 파일
+
+환경 변수 설정:
+
+```bash
+export GOOGLE_SHEET_ID="YOUR_SHEET_ID"
+export GOOGLE_CREDENTIALS_PATH="path/to/service_account.json"
+```
+
+## 사용법
+
+애플리케이션을 실행하려면:
+
+```bash
+python3 main.py
+```
+
+애플리케이션이 시작되고 메뉴 옵션을 안내합니다.
+
+---
+
+## 테스트 및 검증
+
+### 테스트 사용자
+
+시스템은 다음 참여자와 함께 테스트되었습니다:
+
+- YING LAN
+- 신동해 (Shin Dong-hae)
+- WEN NUORAN
+- 김연세 (Kim Yeon-se)
+
+### 검증된 기능
+
+- ✅ 방 생성 및 관리
+- ✅ 참여자 모집 및 관리
+- ✅ 메뉴 항목 관리 및 편집
+- ✅ 실시간 채팅 메시지
+- ✅ 모집 완료 워크플로우
+- ✅ 자동 비용 계산 및 분할
+- ✅ 방 복제 기능
+- ✅ Google Sheets 데이터 지속성 (저장/로드)
+
+---
+
+## 보안 및 개인정보
+
+⚠️ **중요 알림**: 보안상의 이유로 다음 비공개 파일은 저장소에 포함되지 **않습니다**:
+
+- `service_account.json` - Google Cloud 서비스 계정 자격증명
+- `credentials.json` - OAuth 자격증명
+- `local_storage.json` - 로컬 사용자 데이터
+
+**사용자는 자신의** 자격증명 및 구성 파일을 제공해야 합니다. 민감한 파일을 버전 관리에 커밋하지 마세요.
+
+## 프로젝트 구조
+
+```
+deep-code-crew/
+├── main.py              # 애플리케이션 진입점
+├── requirements.txt     # Python 의존성
+├── README.md           # 이 파일
+└── [source files]      # 핵심 애플리케이션 모듈
+```
+
+## 기여
+
+이것은 정보 프로그래밍 심화의 팀 프로젝트입니다. 기여와 개선을 환영합니다!
+
+## 라이선스
+
+[라이선스 정보를 추가하세요]
+
+## 지원
+
+문제, 질문 또는 제안이 있으시면 저장소에 Issue를 등록해 주세요.
